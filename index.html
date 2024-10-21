@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick And Morty | API</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <header class="header">
+            <div class="container-hero">
+                <div class="left">
+                    <div class="box-input">
+                        <input type="text" placeholder="Busca un Personaje" id="inputSearch">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="infoPag">
+                        <span id="paginaActual">Pagina Actual : 1</span>
+                        <span id="paginaTotales">Paginas Totales : 1</span>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button id="prevPage">
+                            <span class="material-icons-sharp">
+                                arrow_back_ios
+                            </span>
+                        </button>
+                        <button id="nextPage">
+                            <span class="material-icons-sharp">
+                                arrow_forward_ios
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <section class="sectionMain">
+            <div class="lds-dual-ring" id="spinner">
+
+            </div>
+            <div class="containerError">
+                <h1>No se encontró nada</h1>
+                <span class="material-icons-sharp">
+                    sentiment_dissatisfied
+                </span>
+            </div>
+            <div class="containerPelis">
+           
+            </div>
+        </section>
+        
+        <div class="modal" id="modal">
+            <div class="containerModal">
+            </div>
+            <button id="cerrarModal">
+                <span class="material-icons-sharp">
+                    close
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
